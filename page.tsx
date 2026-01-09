@@ -20,29 +20,7 @@ interface Member {
     joinedAt: string;
 }
 
-export default function OrgMembersPage() {
-    const router = useRouter();
-    const params = useParams();
-    const slug = params.slug as string;
-
-    const [members, setMembers] = useState<Member[]>([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState<string | null>(null);
-    const [orgBillingStatus, setOrgBillingStatus] = useState<string | null>(null);
-
-    // Invite modal state
-    const [showInviteModal, setShowInviteModal] = useState(false);
-    const [inviting, setInviting] = useState(false);
-    const [inviteError, setInviteError] = useState<string | null>(null);
-    const [inviteSuccess, setInviteSuccess] = useState<string | null>(null);
-    const [inviteForm, setInviteForm] = useState({ githubUsername: "", role: "member" });
-
-    useEffect(() => {
-        if (slug) {
-            fetchMembers();
-            fetchOrgDetails();
-        }
-    }, [slug]);
+//test if it works
 
     const fetchOrgDetails = async () => {
         try {
