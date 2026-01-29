@@ -1,3 +1,4 @@
+<?php
 /**
  * Upload credit note PDF from B2B
  *
