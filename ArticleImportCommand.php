@@ -9,7 +9,7 @@ class ArticleImportCommand
 
     private $importFormat = 'csv';
     private $usedBikeImportPermissionByMerchant = [];
-
+  
     private function isUsedBikeImportRow(array $article, int $merchantId, string $akeneoFamilyCode, \Pegasus_Plugins_Components_ArticleComponent $articleComponent): bool
     {  
         if ($this->isUsedBikeFamilyCode($article['family'] ?? $akeneoFamilyCode)) {
