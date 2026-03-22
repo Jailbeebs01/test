@@ -1,6 +1,6 @@
 <?php
   
-class ArticleImportCommand
+class ArticleImportCommand 
 {  
     private const MERCHANT_MOTORPROFI = 30001;
  
