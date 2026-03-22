@@ -6,7 +6,7 @@ class ArticleImportCommand
   
     private const USED_BIKE_IMPORT_META_KEY = 'used_bike_import_enabled'; 
     private const USED_BIKE_FAMILY_CODES = ['ba_gebrauchtraeder'];
-
+ 
     private $importFormat = 'csv' ; 
     private $usedBikeImportPermissionByMerchant = [];
   
